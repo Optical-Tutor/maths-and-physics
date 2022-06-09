@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         </nav>
 
         <h1 className={styles.title}>
-          <span className={styles.heading}>Optical Tutor's maths and physics learning topology.</span> Ease through your GCSE's with my bespoke curriculum and quizzes.
+          <span className={styles.heading}>Optical Tutor maths and physics learning topology.</span> Ease through your GCSEs with my bespoke curriculum and quizzes.
         </h1>
 
         <div className={styles.intro}>
