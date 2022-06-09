@@ -19,12 +19,12 @@ const Home: NextPage = () => {
             <li><a href="">Home</a></li>
             <li><a href="">About Me</a></li>
             <li><a href="">Login</a></li>
-            <li><a href="">Sign Up</a></li>
+            <li><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="">Sign Up</button></li>
           </ul>
         </nav>
 
         <h1 className={styles.title}>
-          <span className={styles.heading}>Optical Tutor maths and physics learning topology.</span> Ease through your GCSEs with my bespoke curriculum and quizzes.
+          <span className={styles.heading}>Optical Tutor&#39;s maths and physics learning topology.</span> Ease through your GCSE&#39;s with my bespoke curriculum and quizzes.
         </h1>
 
         <div className={styles.intro}>
