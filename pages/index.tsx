@@ -14,40 +14,54 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          <span className={styles.heading}>Optical Tutor's maths and physics learning topology.</span> Ease through your GCSE's with my bespoke curriculum and quizzes.
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
+          Get started by choosing a {' '}
+          <code className={styles.code}>/learning pathway</code>
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a
+            href="https://www.youtube.com/c/3blue1brown"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.card}
+          >
+            <h2>Videos &rarr;</h2>
+            <p>Follow my video courses for maths and physics deep-dives</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="https://github.com/wbierbower/awesome-physics"
+            target="_blank"
+            rel="noreferrer"
             className={styles.card}
+          >
+            <h2>Learn &rarr;</h2>
+            <p>Understand physics with these interactive resources and quizzes!</p>
+          </a>
+
+          <a
+            href="https://observablehq.com/@inesrezo/lorenz"
+            className={styles.card}
+            target="_blank"
+            rel="noreferrer"
           >
             <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <p>Play with mathematical visualisations to solidify understanding</p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://mathforums.com/math/physics/"
             className={styles.card}
+            target="_blank"
+            rel="noreferrer"
           >
-            <h2>Deploy &rarr;</h2>
+            <h2>Peer Review &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Post questions and answers for peers and learn collaboratively
             </p>
           </a>
         </div>

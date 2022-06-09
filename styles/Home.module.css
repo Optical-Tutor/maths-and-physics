@@ -4,6 +4,8 @@
 
 .main {
   min-height: 100vh;
+  max-width: 85%;
+  margin: auto;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -47,7 +49,21 @@
 
 .title,
 .description {
-  text-align: center;
+  text-align: left;
+}
+
+.heading {
+  -webkit-animation: flow 20s ease-in-out infinite;
+  animation: flow 20s ease-in-out infinite;
+  position: inline;
+  background: linear-gradient(-60deg,#60a5fa,#f472b6);
+  background-size: 200%;
+  -webkit-animation: flow 30s ease infinite;
+  -moz-animation: flow 30s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
 }
 
 .description {
@@ -88,8 +104,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #60a5fa;
+  border-color: #60a5fa;
 }
 
 .card h2 {
