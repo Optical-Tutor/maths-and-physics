@@ -14,6 +14,21 @@
   align-items: center;
 }
 
+.navbar {
+  width: 100%;
+  padding-bottom: 4%;
+}
+
+.navbar > ul > li {
+  display: inline-grid;
+  margin-right: 3%;
+}
+
+.navbar > ul > li:hover {
+  text-decoration: underline;
+}
+
+
 .footer {
   display: flex;
   flex: 1;
@@ -49,6 +64,16 @@
   font-weight: 600;
 }
 
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .main {
+    max-width: 95%;
+  }
+}
+
 .title,
 .description {
   text-align: left;
@@ -70,7 +95,7 @@
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 4rem 0 2rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }

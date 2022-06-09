@@ -13,9 +13,29 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+
+        <nav className={styles.navbar}>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Me</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Sign Up</a></li>
+          </ul>
+        </nav>
+
         <h1 className={styles.title}>
           <span className={styles.heading}>Optical Tutor's maths and physics learning topology.</span> Ease through your GCSE's with my bespoke curriculum and quizzes.
         </h1>
+
+        <div className={styles.intro}>
+          <iframe 
+            width="672" 
+            height="378" 
+            src="https://www.youtube.com/embed/MXs1cOlidWs" 
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;"
+          ></iframe>
+        </div>
 
         <p className={styles.description}>
           Get started by choosing a {' '}
@@ -68,16 +88,24 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+                <Image src="/facebook.svg" alt="Facebook Logo" width={80} height={33} />
+            </a>
           </span>
-        </a>
+          <span>
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="/instagram.svg" alt="Instagram Logo" width={80} height={28} />
+            </a>
+          </span>
       </footer>
     </div>
   )
