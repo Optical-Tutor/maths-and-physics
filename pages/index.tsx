@@ -16,10 +16,10 @@ const Home: NextPage = () => {
 
         <nav className={styles.navbar}>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Login</a></li>
-            <li><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="">Sign Up</button></li>
+            <li><a>Home</a></li>
+            <li><a>About Me</a></li>
+            <li><a>Login</a></li>
+            <li><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign Up</button></li>
           </ul>
         </nav>
 
