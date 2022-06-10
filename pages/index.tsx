@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         </nav>
 
         <h1 className={styles.title}>
-          <span className={styles.heading}>Mark&#39;s Maths and Physics Academy.</span> Ease through your GCSE&#39;s with my bespoke curriculum and quizzes.
+          <span className={styles.heading}>Mark&#39;s Maths and Physics Academy.</span> GCSE Maths and Physics through the eyes of a PhD (Physics) Researcher.
         </h1>
 
         <div className={styles.intro}>
