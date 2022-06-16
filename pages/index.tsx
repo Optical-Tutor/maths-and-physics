@@ -18,12 +18,19 @@ const Home: NextPage = () => {
       <main className={styles.main}>
 
         <nav className={styles.navbar}>
-          <HStack spacing='28px'>
-            <a>Home</a>
-            <a>About Me</a>
-            <a>Login</a>
-            <Button colorScheme='blue'>Sign Up</Button>
-          </HStack>
+          <div className={styles.navContainer}>
+            <div className={styles.navGrid}>
+              <h1><b>The Maths and Physics Bay</b></h1>
+              <HStack spacing='28px' justify='center'>
+                <a>Home</a>
+                <a>About Me</a>
+                <a>Login</a>
+              </HStack>
+              <HStack justify='right'>
+                <Button colorScheme='blue' width='200px'>Sign Up</Button>
+              </HStack>
+            </div>
+          </div>
         </nav>
         
         <h1 className={styles.title}>

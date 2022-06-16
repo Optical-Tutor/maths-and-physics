@@ -38,7 +38,25 @@
   --chakra-backdrop-saturate: var(--chakra-empty, );
   --chakra-backdrop-sepia: var(--chakra-empty, );
   height: 72px;
-  border-color: var(--chakra-colors-gray-100);
+  /* border-bottom-width: 0.5px;
+  border-bottom-style: solid; */
+  border-color: var(--chakra-colors-gray-900);
+}
+
+.navContainer {
+  width: 100%;
+  margin-inline: auto;
+  max-width: var(--chakra-sizes-container-2xl);
+  padding-inline-start: var(--chakra-space-8);
+  padding-inline-end: var(--chakra-space-8);
+}
+
+.navGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  width: var(--chakra-sizes-full);
+  -webkit-box-align: center;
+  align-items: center;
 }
 
 .footer {
