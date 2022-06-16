@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { Button } from '@chakra-ui/react'
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
             <li><a>Home</a></li>
             <li><a>About Me</a></li>
             <li><a>Login</a></li>
-            <li><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign Up</button></li>
+            <li><Button colorScheme='blue'>Sign Up</Button></li>
           </ul>
         </nav>
 
