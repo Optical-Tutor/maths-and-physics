@@ -1,9 +1,9 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { Button } from '@chakra-ui/react'
-import { HStack } from '@chakra-ui/react'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import { Button } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 
 
 const Home: NextPage = () => {
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         </div>
 
         <p className={styles.description}>
-          Get started by choosing a {' '}
+          Get started by choosing a {" "}
           <code className={styles.code}>/learning pathway</code>
         </p>
 
@@ -111,7 +111,7 @@ const Home: NextPage = () => {
           </span>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
