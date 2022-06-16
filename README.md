@@ -1,5 +1,7 @@
 # Maths And Physics: Optics Tutor
 
+[Demo](https://maths-and-physics-dusky.vercel.app/)
+
 Online educational resource [MAP](mathsandphysics.co.uk)
 
 [Notion Docs](https://www.notion.so/MAP-0e93671e75fa476aab7413c431483aeb)
