@@ -1,4 +1,7 @@
 {
     "eslint.format.enable": true,
-    "eslint.alwaysShowStatus": true
+    "eslint.alwaysShowStatus": true,
+    "cSpell.words": [
+        "chakra"
+    ]
 }

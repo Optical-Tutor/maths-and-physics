@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Button } from '@chakra-ui/react'
+import { HStack } from '@chakra-ui/react'
+
 
 const Home: NextPage = () => {
   return (
@@ -16,16 +18,16 @@ const Home: NextPage = () => {
       <main className={styles.main}>
 
         <nav className={styles.navbar}>
-          <ul>
-            <li><a>Home</a></li>
-            <li><a>About Me</a></li>
-            <li><a>Login</a></li>
-            <li><Button colorScheme='blue'>Sign Up</Button></li>
-          </ul>
+          <HStack spacing='28px'>
+            <a>Home</a>
+            <a>About Me</a>
+            <a>Login</a>
+            <Button colorScheme='blue'>Sign Up</Button>
+          </HStack>
         </nav>
-
+        
         <h1 className={styles.title}>
-          <span className={styles.heading}>Mark&#39;s Maths and Physics Academy.</span> GCSE Maths and Physics through the eyes of a PhD (Physics) Researcher.
+          <span className={styles.heading}>The Maths and Physics Bay.</span> GCSE Maths and Physics through the eyes of a PhD (Physics) Researcher.
         </h1>
 
         <div className={styles.intro}>

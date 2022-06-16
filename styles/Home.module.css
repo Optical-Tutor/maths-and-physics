@@ -15,20 +15,31 @@
 }
 
 .navbar {
-  width: 100%;
-  padding-bottom: 4%;
-  overflow: hidden;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: row;
+  position: fixed;
+  width: var(--chakra-sizes-full);
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  background-color: var(--chakra-colors-whiteAlpha-200);
+  backdrop-filter: var(--chakra-backdrop-blur) var(--chakra-backdrop-brightness) var(--chakra-backdrop-contrast) var(--chakra-backdrop-grayscale) var(--chakra-backdrop-hue-rotate) var(--chakra-backdrop-invert) var(--chakra-backdrop-opacity) var(--chakra-backdrop-saturate) var(--chakra-backdrop-sepia);
+  --chakra-backdrop-blur: blur(var(--chakra-blur-lg));
+  --chakra-backdrop-brightness: var(--chakra-empty, );
+  --chakra-backdrop-contrast: var(--chakra-empty, );
+  --chakra-backdrop-grayscale: var(--chakra-empty, );
+  --chakra-backdrop-hue-rotate: var(--chakra-empty, );
+  --chakra-backdrop-invert: var(--chakra-empty, );
+  --chakra-backdrop-opacity: var(--chakra-empty, );
+  --chakra-backdrop-saturate: var(--chakra-empty, );
+  --chakra-backdrop-sepia: var(--chakra-empty, );
+  height: 72px;
+  border-color: var(--chakra-colors-gray-100);
 }
-
-.navbar > ul > li {
-  display: inline-grid;
-  margin-right: 3%;
-}
-
-.navbar > ul > li > a:hover {
-  text-decoration: underline;
-}
-
 
 .footer {
   display: flex;
@@ -60,6 +71,7 @@
 
 .title {
   margin: 0;
+  padding-top: 3%;
   line-height: 1.15;
   font-size: 4rem;
   font-weight: 600;
