@@ -186,12 +186,6 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 2.2em;
-  margin-left: 0.2rem;
-  margin-right: 0.1rem;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;

@@ -98,24 +98,26 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-          <span className={styles.logo}>
+        <HStack>
+          <span>
             <a
-              href="https://www.google.com"
+              href="https://en-gb.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-                <Image src="/facebook.svg" alt="Facebook Logo" width={80} height={33} />
+                <Image src="/facebook.svg" alt="Facebook Logo" width={29} height={29} />
             </a>
           </span>
           <span>
             <a
-              href="https://www.google.com"
+              href="https://www.instagram.com/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="/instagram.svg" alt="Instagram Logo" width={80} height={28} />
+              <Image src="/instagram.svg" alt="Instagram Logo" width={29} height={29} />
             </a>
           </span>
+        </HStack>
       </footer>
     </div>
   );
