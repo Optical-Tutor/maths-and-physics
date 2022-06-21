@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import { Button } from "@chakra-ui/react";
 import { HStack } from "@chakra-ui/react";
-
 
 const Home: NextPage = () => {
   return (
@@ -16,39 +16,49 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-
         <nav className={styles.navbar}>
           <div className={styles.navContainer}>
             <div className={styles.navGrid}>
-              <h1><b>The Maths and Physics Bay</b></h1>
-              <HStack spacing='28px' justify='center'>
-                <a>Home</a>
-                <a>About Me</a>
-                <a>Login</a>
+              <h1>
+                <b>The Maths and Physics Bay</b>
+              </h1>
+              <HStack spacing="28px" justify="center">
+                <Link href="/">
+                  <button>Home</button>
+                </Link>
+                <Link href="/about">
+                  <button>About Me</button>
+                </Link>
+                <Link href="/login">
+                  <button>Login</button>
+                </Link>
               </HStack>
-              <HStack justify='right'>
-                <Button colorScheme='blue' width='200px'>Sign Up</Button>
+              <HStack justify="right">
+                <Button colorScheme="blue" width="200px">
+                  Sign Up
+                </Button>
               </HStack>
             </div>
           </div>
         </nav>
-        
+
         <h1 className={styles.title}>
-          <span className={styles.heading}>The Maths and Physics Bay.</span> GCSE Maths and Physics through the eyes of a PhD (Physics) Researcher.
+          <span className={styles.heading}>The Maths and Physics Bay.</span>{" "}
+          GCSE Maths and Physics through the eyes of a PhD (Physics) Researcher.
         </h1>
 
         <div className={styles.intro}>
-          <iframe 
-            width="672" 
-            height="378" 
-            src="https://www.youtube.com/embed/MXs1cOlidWs" 
+          <iframe
+            width="672"
+            height="378"
+            src="https://www.youtube.com/embed/MXs1cOlidWs"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;"
           ></iframe>
         </div>
 
         <p className={styles.description}>
-          Get started by choosing a {" "}
+          Get started by choosing a{" "}
           <code className={styles.code}>/learning pathway</code>
         </p>
 
@@ -70,7 +80,9 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>Learn &rarr;</h2>
-            <p>Understand physics with these interactive resources and quizzes!</p>
+            <p>
+              Understand physics with these interactive resources and quizzes!
+            </p>
           </a>
 
           <a
@@ -80,7 +92,9 @@ const Home: NextPage = () => {
             rel="noreferrer"
           >
             <h2>Examples &rarr;</h2>
-            <p>Play with mathematical visualisations to solidify understanding</p>
+            <p>
+              Play with mathematical visualisations to solidify understanding
+            </p>
           </a>
 
           <a
@@ -105,7 +119,12 @@ const Home: NextPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-                <Image src="/facebook.svg" alt="Facebook Logo" width={25} height={25} />
+              <Image
+                src="/facebook.svg"
+                alt="Facebook Logo"
+                width={25}
+                height={25}
+              />
             </a>
           </span>
           <span>
@@ -114,7 +133,12 @@ const Home: NextPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="/instagram.svg" alt="Instagram Logo" width={25} height={25} />
+              <Image
+                src="/instagram.svg"
+                alt="Instagram Logo"
+                width={25}
+                height={25}
+              />
             </a>
           </span>
         </HStack>

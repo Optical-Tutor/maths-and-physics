@@ -1,7 +1,7 @@
 {
-    "eslint.format.enable": true,
-    "eslint.alwaysShowStatus": true,
-    "cSpell.words": [
-        "chakra"
-    ]
+  "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "cSpell.words": ["chakra"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
