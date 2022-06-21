@@ -3,8 +3,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import { Button } from "@chakra-ui/react";
+import { Button, ColorModeScript } from "@chakra-ui/react";
 import { HStack } from "@chakra-ui/react";
+
+const theme = "light";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <ColorModeScript initialColorMode={theme} />
         <nav className={styles.navbar}>
           <div className={styles.navContainer}>
             <div className={styles.navGrid}>
@@ -29,12 +32,15 @@ const Home: NextPage = () => {
                 <Link href="/about">
                   <button>About Me</button>
                 </Link>
-                <Link href="/login">
-                  <button>Login</button>
+                <Link href="/pricing">
+                  <button>Pricing</button>
                 </Link>
               </HStack>
               <HStack justify="right">
-                <Button colorScheme="blue" width="200px">
+                <Button colorScheme="blue" variant="ghost" width="100px">
+                  Login
+                </Button>
+                <Button colorScheme="blue" width="100px">
                   Sign Up
                 </Button>
               </HStack>
