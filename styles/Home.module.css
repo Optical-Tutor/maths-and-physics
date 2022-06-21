@@ -27,16 +27,20 @@
   left: 0px;
   z-index: 100;
   background-color: var(--chakra-colors-whiteAlpha-200);
-  backdrop-filter: var(--chakra-backdrop-blur) var(--chakra-backdrop-brightness) var(--chakra-backdrop-contrast) var(--chakra-backdrop-grayscale) var(--chakra-backdrop-hue-rotate) var(--chakra-backdrop-invert) var(--chakra-backdrop-opacity) var(--chakra-backdrop-saturate) var(--chakra-backdrop-sepia);
+  backdrop-filter: var(--chakra-backdrop-blur) var(--chakra-backdrop-brightness)
+    var(--chakra-backdrop-contrast) var(--chakra-backdrop-grayscale)
+    var(--chakra-backdrop-hue-rotate) var(--chakra-backdrop-invert)
+    var(--chakra-backdrop-opacity) var(--chakra-backdrop-saturate)
+    var(--chakra-backdrop-sepia);
   --chakra-backdrop-blur: blur(var(--chakra-blur-lg));
-  --chakra-backdrop-brightness: var(--chakra-empty, );
-  --chakra-backdrop-contrast: var(--chakra-empty, );
-  --chakra-backdrop-grayscale: var(--chakra-empty, );
-  --chakra-backdrop-hue-rotate: var(--chakra-empty, );
-  --chakra-backdrop-invert: var(--chakra-empty, );
-  --chakra-backdrop-opacity: var(--chakra-empty, );
-  --chakra-backdrop-saturate: var(--chakra-empty, );
-  --chakra-backdrop-sepia: var(--chakra-empty, );
+  --chakra-backdrop-brightness: var(--chakra-empty);
+  --chakra-backdrop-contrast: var(--chakra-empty);
+  --chakra-backdrop-grayscale: var(--chakra-empty);
+  --chakra-backdrop-hue-rotate: var(--chakra-empty);
+  --chakra-backdrop-invert: var(--chakra-empty);
+  --chakra-backdrop-opacity: var(--chakra-empty);
+  --chakra-backdrop-saturate: var(--chakra-empty);
+  --chakra-backdrop-sepia: var(--chakra-empty);
   height: 72px;
   /* border-bottom-width: 0.5px;
   border-bottom-style: solid; */
@@ -66,7 +70,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-  color:rgb(180, 180, 180);
+  color: rgb(180, 180, 180);
 }
 
 .footer a {
@@ -74,6 +78,14 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.title {
+  margin: 0;
+  padding-top: 3%;
+  line-height: 1.15;
+  font-size: 4rem;
+  font-weight: 600;
 }
 
 .title a {
@@ -85,14 +97,6 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  padding-top: 3%;
-  line-height: 1.15;
-  font-size: 4rem;
-  font-weight: 600;
 }
 
 @media only screen and (max-width: 600px) {
@@ -114,7 +118,7 @@
   -webkit-animation: flow 20s ease-in-out infinite;
   animation: flow 20s ease-in-out infinite;
   position: inline;
-  background: linear-gradient(-60deg,#60a5fa,#f472b6);
+  background: linear-gradient(-60deg, #60a5fa, #f472b6);
   background-size: 200%;
   -webkit-animation: flow 30s ease infinite;
   -moz-animation: flow 30s ease infinite;

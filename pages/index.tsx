@@ -8,6 +8,11 @@ import { HStack } from "@chakra-ui/react";
 
 const theme = "light";
 
+if (typeof window !== "undefined") {
+  // only runs when on client env
+  localStorage.setItem("chakra-ui-color-mode", "light");
+}
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
