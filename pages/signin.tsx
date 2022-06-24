@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Box, Stack } from "@chakra-ui/react";
+import { Box, Stack, Center } from "@chakra-ui/react";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -14,9 +14,8 @@ const Signin: NextPage = () => {
 
   useEffect(() => {
     if (session) {
+      console.log(session);
       router.push("/app");
-    } else {
-      router.push("/");
     }
   }, [session, router]);
 
@@ -28,10 +27,12 @@ const Signin: NextPage = () => {
           h="calc(100vh)"
           bgGradient="linear(to-br, #FF0080, #7928CA)"
         >
-          1
+          master maths and physics
         </Box>
         <Box w="60%" h="calc(100vh)" bg="white">
-          <SocialButton onClick={() => signIn("github")} />
+          <Center padding={4}>
+            <SocialButton onClick={() => signIn("github")} />
+          </Center>
         </Box>
       </Stack>
     </div>
