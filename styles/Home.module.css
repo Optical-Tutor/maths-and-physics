@@ -26,6 +26,7 @@
   top: 0px;
   left: 0px;
   z-index: 100;
+  /* backdrop-filter: blur(12px); */
   background-color: var(--chakra-colors-whiteAlpha-200);
   backdrop-filter: var(--chakra-backdrop-blur) var(--chakra-backdrop-brightness)
     var(--chakra-backdrop-contrast) var(--chakra-backdrop-grayscale)
