@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 const SocialButton = ({ onClick }) => {
   return (
     <HStack>
-      <Button colorScheme="twitter" leftIcon={<FaGithub />} onClick={onClick}>
+      <Button colorScheme="gray" leftIcon={<FaGithub />} onClick={onClick}>
         Sign in with Github
       </Button>
     </HStack>
