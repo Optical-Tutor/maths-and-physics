@@ -7,6 +7,7 @@ const SocialButton = ({ type, onClick }) => {
   return (
     <HStack>
       <Button
+        size="lg"
         colorScheme={type === "Github" ? "gray" : "blue"}
         leftIcon={type === "Github" ? <FaGithub /> : <FaGoogle />}
         onClick={onClick}

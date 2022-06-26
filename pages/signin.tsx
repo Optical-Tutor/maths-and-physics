@@ -26,16 +26,19 @@ const Signin: NextPage = () => {
           h="calc(100vh)"
           bgGradient="linear(to-br, #FF0080, #7928CA)"
         >
-          <ReturnHome></ReturnHome>
+          <ReturnHome />
           <Center h="calc(100vh)">
-            <Text w={200} className="text-white text-4xl text-left">
-              enter the maths and physics <Text as="i">bay</Text>
+            <Text w={300} className="text-white text-6xl text-left">
+              dive into the maths and physics <Text as="i">bay</Text>
             </Text>
           </Center>
         </Box>
         <Box w="60%" h="calc(100vh)" bg="white">
           <Center h="calc(100vh)">
             <VStack>
+              <h1 className="p-5 text-4xl font-black">
+                Let&#39;s get you started!
+              </h1>
               <SocialButton type="Github" onClick={() => signIn("github")} />
               <div className="text-slate-400">or</div>
               <SocialButton type="Google" onClick={() => signIn("google")} />

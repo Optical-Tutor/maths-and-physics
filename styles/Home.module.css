@@ -26,13 +26,8 @@
   top: 0px;
   left: 0px;
   z-index: 100;
-  /* backdrop-filter: blur(12px); */
+  backdrop-filter: blur(12px);
   background-color: var(--chakra-colors-whiteAlpha-200);
-  backdrop-filter: var(--chakra-backdrop-blur) var(--chakra-backdrop-brightness)
-    var(--chakra-backdrop-contrast) var(--chakra-backdrop-grayscale)
-    var(--chakra-backdrop-hue-rotate) var(--chakra-backdrop-invert)
-    var(--chakra-backdrop-opacity) var(--chakra-backdrop-saturate)
-    var(--chakra-backdrop-sepia);
   --chakra-backdrop-blur: blur(var(--chakra-blur-lg));
   --chakra-backdrop-brightness: var(--chakra-empty);
   --chakra-backdrop-contrast: var(--chakra-empty);
@@ -43,8 +38,6 @@
   --chakra-backdrop-saturate: var(--chakra-empty);
   --chakra-backdrop-sepia: var(--chakra-empty);
   height: 72px;
-  /* border-bottom-width: 0.5px;
-  border-bottom-style: solid; */
   border-color: var(--chakra-colors-gray-900);
 }
 

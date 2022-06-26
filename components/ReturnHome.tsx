@@ -5,7 +5,7 @@ const ReturnHome = () => {
   return (
     <Link href="/">
       <div className="p-5 absolute cursor-pointer underline text-slate-50">
-        Maths & Physics Bay
+        The Maths and Physics Bay
       </div>
     </Link>
   );
