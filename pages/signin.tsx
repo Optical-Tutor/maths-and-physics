@@ -9,6 +9,7 @@ import ReturnHome from "../components/ReturnHome";
 const Signin: NextPage = () => {
   const { data: session, status } = useSession();
   const loading = status === "loading";
+  console.log(loading);
 
   const router = useRouter();
 

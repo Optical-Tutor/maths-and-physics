@@ -1,6 +1,11 @@
 import React from "react";
 import type { NextPage } from "next";
-import { getSession, useSession, signOut } from "next-auth/react";
+import {
+  getSession,
+  useSession,
+  signOut,
+  GetSessionParams,
+} from "next-auth/react";
 import {
   AlertDialog,
   AlertDialogBody,
@@ -25,7 +30,7 @@ const App: NextPage = () => {
   const { data: session, status } = useSession();
   const loading = status === "loading";
   const { onClose } = useDisclosure();
-  const cancelRef = React.useRef();
+  const cancelRef = React.useRef(null);
 
   if (loading) {
     return null;
@@ -66,6 +71,7 @@ const App: NextPage = () => {
           <div>
             <Image
               className="rounded-full"
+              // @ts-ignore
               src={session.user?.image || session?.image}
               width={50}
               height={50}
@@ -81,6 +87,7 @@ const App: NextPage = () => {
               </MenuList>
             </Menu>
           </div>
+          {/* @ts-ignore */}
           <Badge colorScheme="green">
             @{session.user?.name || session?.name}
           </Badge>
@@ -90,7 +97,9 @@ const App: NextPage = () => {
   );
 };
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(
+  context: GetSessionParams | undefined
+) {
   const session = await getSession(context);
   return {
     props: { session },

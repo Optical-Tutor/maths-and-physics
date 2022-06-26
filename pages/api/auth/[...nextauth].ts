@@ -15,7 +15,9 @@ export default NextAuth({
       clientSecret: process.env.GITHUB_SECRET,
     }),
     GoogleProvider({
+      // @ts-ignore
       clientId: process.env.GOOGLE_CLIENT_ID,
+      // @ts-ignore
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       authorization: {
         params: {

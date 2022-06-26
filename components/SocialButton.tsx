@@ -3,7 +3,13 @@ import { Button, HStack } from "@chakra-ui/react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 
 // eslint-disable-next-line react/prop-types
-const SocialButton = ({ type, onClick }) => {
+const SocialButton = ({
+  type,
+  onClick,
+}: {
+  type: string;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+}) => {
   return (
     <HStack>
       <Button
