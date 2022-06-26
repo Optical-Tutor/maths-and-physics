@@ -4,6 +4,7 @@ import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import SocialButton from "../components/SocialButton";
+import ReturnHome from "../components/ReturnHome";
 
 const Signin: NextPage = () => {
   const { data: session, status } = useSession();
@@ -25,6 +26,7 @@ const Signin: NextPage = () => {
           h="calc(100vh)"
           bgGradient="linear(to-br, #FF0080, #7928CA)"
         >
+          <ReturnHome></ReturnHome>
           <Center h="calc(100vh)">
             <Text w={200} className="text-white text-4xl text-left">
               enter the maths and physics <Text as="i">bay</Text>
