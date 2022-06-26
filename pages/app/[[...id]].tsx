@@ -15,9 +15,6 @@ import Image from "next/image";
 
 const App: NextPage = () => {
   const { data: session, status } = useSession();
-  if (session) {
-    console.log(session.user.image);
-  }
   const loading = status === "loading";
   const { isOpen, onOpen, onClose } = useDisclosure();
   const cancelRef = React.useRef();

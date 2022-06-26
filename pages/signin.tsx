@@ -8,13 +8,11 @@ import SocialButton from "../components/SocialButton";
 const Signin: NextPage = () => {
   const { data: session, status } = useSession();
   const loading = status === "loading";
-  console.log(loading);
 
   const router = useRouter();
 
   useEffect(() => {
     if (session) {
-      console.log(session);
       router.push("/app");
     }
   }, [session, router]);
