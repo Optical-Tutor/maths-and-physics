@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Box, Stack, Center, Text } from "@chakra-ui/react";
+import { Box, Stack, Center, Text, VStack } from "@chakra-ui/react";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -34,8 +34,12 @@ const Signin: NextPage = () => {
           </Center>
         </Box>
         <Box w="60%" h="calc(100vh)" bg="white">
-          <Center padding={4} h="calc(100vh)">
-            <SocialButton onClick={() => signIn("github")} />
+          <Center h="calc(100vh)">
+            <VStack>
+              <SocialButton type="Github" onClick={() => signIn("github")} />
+              <div className="text-slate-400">or</div>
+              <SocialButton type="Google" onClick={() => signIn("google")} />
+            </VStack>
           </Center>
         </Box>
       </Stack>

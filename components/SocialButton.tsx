@@ -1,13 +1,17 @@
 import React from "react";
 import { Button, HStack } from "@chakra-ui/react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaGoogle } from "react-icons/fa";
 
 // eslint-disable-next-line react/prop-types
-const SocialButton = ({ onClick }) => {
+const SocialButton = ({ type, onClick }) => {
   return (
     <HStack>
-      <Button colorScheme="gray" leftIcon={<FaGithub />} onClick={onClick}>
-        Sign in with Github
+      <Button
+        colorScheme={type === "Github" ? "gray" : "blue"}
+        leftIcon={type === "Github" ? <FaGithub /> : <FaGoogle />}
+        onClick={onClick}
+      >
+        Sign in with {type}
       </Button>
     </HStack>
   );
