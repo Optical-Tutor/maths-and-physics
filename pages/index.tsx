@@ -3,9 +3,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import { Button, ColorModeScript, HStack } from "@chakra-ui/react";
+import { Button, ColorModeScript, HStack, VStack } from "@chakra-ui/react";
 
 const theme = "light";
+
+const CURRENT_YEAR = new Date().getFullYear();
 
 if (typeof window !== "undefined") {
   // only runs when on client env
@@ -127,36 +129,39 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-        <HStack>
-          <span>
-            <a
-              href="https://en-gb.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/facebook.svg"
-                alt="Facebook Logo"
-                width={25}
-                height={25}
-              />
-            </a>
-          </span>
-          <span>
-            <a
-              href="https://www.instagram.com/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/instagram.svg"
-                alt="Instagram Logo"
-                width={25}
-                height={25}
-              />
-            </a>
-          </span>
-        </HStack>
+        <VStack>
+          <HStack>
+            <span>
+              <a
+                href="https://en-gb.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/facebook.svg"
+                  alt="Facebook Logo"
+                  width={25}
+                  height={25}
+                />
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://www.instagram.com/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/instagram.svg"
+                  alt="Instagram Logo"
+                  width={25}
+                  height={25}
+                />
+              </a>
+            </span>
+          </HStack>
+          <div>The Maths and Physics Bay &copy; {CURRENT_YEAR}</div>
+        </VStack>
       </footer>
     </div>
   );
