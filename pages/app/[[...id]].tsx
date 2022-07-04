@@ -24,6 +24,7 @@ import {
   MenuGroup,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
+import { FiLogOut } from "react-icons/fi";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -86,7 +87,10 @@ const App: NextPage = () => {
               <MenuList>
                 {/* @ts-ignore */}
                 <MenuGroup title={session.user?.email}>
-                  <MenuItem onClick={() => signOut()}>Sign Out</MenuItem>
+                  <MenuItem onClick={() => signOut()}>
+                    <FiLogOut className="mr-1" />
+                    Sign Out
+                  </MenuItem>
                 </MenuGroup>
               </MenuList>
             </Menu>
