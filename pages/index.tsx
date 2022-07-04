@@ -160,7 +160,10 @@ const Home: NextPage = () => {
               </a>
             </span>
           </HStack>
-          <div>The Maths and Physics Bay &copy; {CURRENT_YEAR}</div>
+          <div>
+            The Maths and Physics Bay &copy; {CURRENT_YEAR}{" "}
+            <span className="text-slate-400">— All Rights Reserved</span>
+          </div>
         </VStack>
       </footer>
     </div>
