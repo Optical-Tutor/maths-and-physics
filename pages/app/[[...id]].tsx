@@ -21,6 +21,7 @@ import {
   MenuList,
   HStack,
   Badge,
+  MenuGroup,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import Image from "next/image";
@@ -83,7 +84,10 @@ const App: NextPage = () => {
                 Account
               </MenuButton>
               <MenuList>
-                <MenuItem onClick={() => signOut()}>Sign Out</MenuItem>
+                {/* @ts-ignore */}
+                <MenuGroup title={session.user?.email}>
+                  <MenuItem onClick={() => signOut()}>Sign Out</MenuItem>
+                </MenuGroup>
               </MenuList>
             </Menu>
           </div>
