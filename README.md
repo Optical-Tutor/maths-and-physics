@@ -6,7 +6,7 @@ Online educational resource [MAP](mathsandphysics.co.uk)
 
 [Notion Docs](https://www.notion.so/MAP-0e93671e75fa476aab7413c431483aeb)
 
-[FigJam](https://www.figma.com/file/OuB9Ye4E01SRwecQKCQy83/Optics-Tutor?node-id=0%3A1)
+[Figma](https://www.figma.com/file/u4RY3R3jgQDM4szdt7IXi3/MAP?node-id=0%3A1)
 
 ## Getting Started
 
