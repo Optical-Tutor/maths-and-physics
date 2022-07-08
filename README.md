@@ -4,7 +4,7 @@
 
 Online educational resource [MAP](mathsandphysics.co.uk)
 
-[Notion Docs](https://www.notion.so/MAP-0e93671e75fa476aab7413c431483aeb)
+[Trello](https://trello.com/invite/b/gXjC8tsd/2f3c33a2ddde4c27dac07fdadb39d1e9/website-dev)
 
 [Figma](https://www.figma.com/file/u4RY3R3jgQDM4szdt7IXi3/MAP?node-id=0%3A1)
 
