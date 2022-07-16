@@ -129,7 +129,7 @@ const Home: NextPage = () => {
         <div className="pt-10">
           <iframe
             title="substack"
-            src="https://shanemcgrath.substack.com/embed"
+            src="https://themathsandphysicsbay.substack.com/embed"
             width="480"
             height="320"
             style={{
