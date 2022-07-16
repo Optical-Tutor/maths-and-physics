@@ -152,12 +152,7 @@ const Home: NextPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src="/facebook.svg"
-                  alt="Facebook Logo"
-                  width={25}
-                  height={25}
-                />
+                Facebook
               </a>
             </span>
             <span>
@@ -166,12 +161,7 @@ const Home: NextPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src="/instagram.svg"
-                  alt="Instagram Logo"
-                  width={25}
-                  height={25}
-                />
+                Instagram
               </a>
             </span>
           </HStack>
