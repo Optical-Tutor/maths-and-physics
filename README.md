@@ -1,12 +1,12 @@
 # Maths And Physics: Optics Tutor
 
-[Demo](https://maths-and-physics-dusky.vercel.app/)
+Application [demo](https://maths-and-physics-dusky.vercel.app/).
 
-Online educational resource [MAP](http://mathsandphysics.co.uk/)
+Online educational resource [MAP](http://mathsandphysics.co.uk/).
 
-[Trello](https://trello.com/invite/b/gXjC8tsd/2f3c33a2ddde4c27dac07fdadb39d1e9/website-dev)
+[Trello](https://trello.com/invite/b/gXjC8tsd/2f3c33a2ddde4c27dac07fdadb39d1e9/website-dev) board.
 
-[Figma](https://www.figma.com/file/u4RY3R3jgQDM4szdt7IXi3/MAP?node-id=0%3A1)
+[Figma](https://www.figma.com/file/u4RY3R3jgQDM4szdt7IXi3/MAP?node-id=0%3A1) UI design work and wire-frames.
 
 ## Getting Started
 
