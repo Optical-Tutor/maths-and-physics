@@ -34,16 +34,9 @@ export default NextAuth({
   secret: process.env.SECRET,
   // TODO: https://next-auth.js.org/configuration/callbacks
   callbacks: {
-    async signIn() {
-      const isAllowedToSignIn = true;
-      if (isAllowedToSignIn) {
-        return true;
-      } else {
-        // Return false to display a default error message
-        return false;
-        // Or you can return a URL to redirect to:
-        // return '/unauthorized'
-      }
+    async jwt({ token }) {
+      token.userRole = "admin";
+      return token;
     },
   },
 });
