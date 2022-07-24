@@ -61,7 +61,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           <span className={styles.heading}>The Maths and Physics Bay.</span>{" "}
           GCSE Maths and Physics through the eyes of a{" "}
-          <i>PhD (Physics) Researcher.</i>
+          <i>Physics Researcher.</i>
         </h1>
 
         <div className={styles.intro}>
