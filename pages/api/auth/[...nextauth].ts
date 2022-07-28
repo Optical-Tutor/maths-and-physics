@@ -32,11 +32,4 @@ export default NextAuth({
     signIn: "/signin",
   },
   secret: process.env.NEXTAUTH_SECRET,
-  // TODO: https://next-auth.js.org/configuration/callbacks
-  callbacks: {
-    async jwt({ token }) {
-      token.userRole = "admin";
-      return token;
-    },
-  },
 });

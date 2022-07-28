@@ -48,7 +48,6 @@ const App: NextPage = () => {
           isCentered
         >
           <AlertDialogOverlay />
-
           <AlertDialogContent>
             <AlertDialogHeader>You are signed out</AlertDialogHeader>
             <AlertDialogBody>
