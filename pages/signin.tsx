@@ -40,10 +40,7 @@ const Signin: NextPage = () => {
               <h1 className="p-5 text-4xl font-black">
                 Let&#39;s get you started!
               </h1>
-              <SocialButton
-                type="Github"
-                onClick={() => signIn("github", { callbackUrl: "/app" })}
-              />
+              <SocialButton type="Github" onClick={() => signIn("github")} />
               <div className="text-slate-400">or</div>
               <SocialButton type="Google" onClick={() => signIn("google")} />
             </VStack>
