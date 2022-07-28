@@ -54,6 +54,9 @@ const App: NextPage = () => {
               Feel free to sign back in any time
             </AlertDialogBody>
             <AlertDialogFooter>
+              <Link href="/">
+                <Button ml={3}>Return home</Button>
+              </Link>
               <Link href="/signin">
                 <Button colorScheme="blue" ml={3}>
                   Sign in

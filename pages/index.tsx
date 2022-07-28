@@ -44,12 +44,12 @@ const Home: NextPage = () => {
               <HStack justify="right">
                 <Link href="/signin">
                   <Button colorScheme="blue" variant="ghost" width="100px">
-                    Login
+                    Log in
                   </Button>
                 </Link>
                 <Link href="/signin">
                   <Button colorScheme="blue" width="100px">
-                    Sign Up
+                    Sign up
                   </Button>
                 </Link>
               </HStack>
