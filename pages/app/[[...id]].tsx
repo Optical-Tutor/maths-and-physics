@@ -50,9 +50,9 @@ const App: NextPage = () => {
           <AlertDialogOverlay />
 
           <AlertDialogContent>
-            <AlertDialogHeader>You are not signed in</AlertDialogHeader>
+            <AlertDialogHeader>You are signed out</AlertDialogHeader>
             <AlertDialogBody>
-              Before you can view content you must sign in.
+              Feel free to sign back in any time
             </AlertDialogBody>
             <AlertDialogFooter>
               <Link href="/signin">
