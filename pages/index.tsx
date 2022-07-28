@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Maths and Physics Bay</title>
+        <title>The Maths and Physics Bay</title>
         <meta name="description" content="The Maths and Physics Bay" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
