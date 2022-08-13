@@ -1,8 +1,8 @@
 # Maths And Physics: Optics Tutor
 
-Application [demo](https://maths-and-physics-dusky.vercel.app/).
+Production deploy [http://mathsandphysicsbay.co.uk/](http://mathsandphysics.co.uk/).
 
-Online educational resource [MAP](http://mathsandphysics.co.uk/).
+Application [demo](https://maths-and-physics-dusky.vercel.app/).
 
 [Trello](https://trello.com/invite/b/gXjC8tsd/2f3c33a2ddde4c27dac07fdadb39d1e9/website-dev) board.
 
